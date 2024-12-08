@@ -1,0 +1,16 @@
+{
+  "name": "My Dev Container",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Shopify.ruby-lsp" // Ruby LSP 拡張機能
+      ]
+    }
+  },
+  "postCreateCommand": "gem install ruby-lsp",
+  "runServices": ["web", "db"],
+  "service": "web",
+  "workspaceFolder": "/app",
+  "overrideCommand": false,
+  "dockerComposeFile": ["../docker-compose.yaml"]
+}
