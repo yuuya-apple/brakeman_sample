@@ -1,0 +1,29 @@
+{
+  "ignored_warnings": [
+    {
+      "warning_type": "Unscoped Find",
+      "warning_code": 82,
+      "fingerprint": "cf0401e944a24fc5ee134d404f78aee6c8b3f51a3017b00cef14ced26371b6ec",
+      "check_name": "UnscopedFind",
+      "message": "Unscoped call to `Post#find`",
+      "file": "app/controllers/posts_controller.rb",
+      "line": 4,
+      "link": "https://brakemanscanner.org/docs/warning_types/unscoped_find/",
+      "code": "Post.find(params[:id])",
+      "render_path": null,
+      "location": {
+        "type": "method",
+        "class": "PostsController",
+        "method": "show"
+      },
+      "user_input": "params[:id]",
+      "confidence": "Weak",
+      "cwe_id": [
+        285
+      ],
+      "note": ""
+    }
+  ],
+  "updated": "2024-12-08 03:36:22 +0000",
+  "brakeman_version": "6.2.2"
+}
